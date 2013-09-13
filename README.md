@@ -46,7 +46,7 @@ Here's an example [Auth Hash](https://github.com/intridea/omniauth/wiki/Auth-Has
     profile_key: 'profile_key'
   },
   :credentials => {
-    :token => 'ABCDEF...', # OAuth 2.0 access_token, which you may wish to store
+    :token => 'ABCDEF...', # OAuth 1.0 access_token, which you may wish to store
     :expires_at => 1321747205, # when the access token expires (it always will)
     :expires => true # this will always be true
   },
