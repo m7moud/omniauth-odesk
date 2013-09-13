@@ -61,7 +61,7 @@ Here's an example [Auth Hash](https://github.com/intridea/omniauth/wiki/Auth-Has
         reference: "12345",
         first_name: "Maksym",
         profile_key: "~~kyad0112d885630b",
-        id_provider: '1'
+        is_provider: '1'
   }
 }
 ```
