@@ -23,7 +23,7 @@ Here's a quick example, adding the middleware to a Rails app in `config/initiali
 
 ```ruby
 Rails.application.config.middleware.use OmniAuth::Builder do
-  provider :elance, ENV['ODESK_CONSUMER_KEY'], ENV['ODESK_CONSUMER_SECRET']
+  provider :odesk, ENV['ODESK_CONSUMER_KEY'], ENV['ODESK_CONSUMER_SECRET']
 end
 ```
 
