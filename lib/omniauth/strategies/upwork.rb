@@ -3,14 +3,14 @@ require 'json'
 
 module OmniAuth
   module Strategies
-    class Odesk < OmniAuth::Strategies::OAuth
+    class Upwork < OmniAuth::Strategies::OAuth
       # Strategy name
-      option :name, "odesk"
+      option :name, "upwork"
 
       # Options being passed to initialize client from the OAuth Gem.
       # Reference: https://github.com/oauth-xx/oauth-ruby
       option :client_options, {
-          site: "https://www.odesk.com",
+          site: "https://www.upwork.com",
           request_token_path: "/api/auth/v1/oauth/token/request",
           authorize_path: "/services/api/auth",
           access_token_path: "/api/auth/v1/oauth/token/access"

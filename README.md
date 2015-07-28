@@ -1,29 +1,29 @@
-omniauth-odesk
+omniauth-upwork
 ===============
 
-Odesk Developer API OAuth 1.0 Strategy for OmniAuth.
+Upwork Developer API OAuth 1.0 Strategy for OmniAuth.
 
-Supports the OAuth 1.0 server-side and client-side flows. Read the [Odesk Developer API docs](http://developers.odesk.com/w/page/38106543/Authentication-using-OAuth) for more details.
+Supports the OAuth 1.0 server-side and client-side flows. Read the [Upwork Developer API docs](https://developers.upwork.com/#authentication_oauth-10) for more details.
 
 ## Installing
 
 Add to your `Gemfile`:
 
 ```ruby
-gem 'omniauth-odesk'
+gem 'omniauth-upwork'
 ```
 
 Then `bundle install`.
 
 ## Usage
 
-`OmniAuth::Strategies::Odesk` is simply a Rack middleware.Read the [OmniAuth 1.0](https://github.com/intridea/omniauth) and [OAuth 2.0](https://github.com/intridea/oauth2) docs for detailed instructions
+`OmniAuth::Strategies::Upwork` is simply a Rack middleware.Read the [OmniAuth 1.0](https://github.com/intridea/omniauth) and [OAuth 2.0](https://github.com/intridea/oauth2) docs for detailed instructions
 
 Here's a quick example, adding the middleware to a Rails app in `config/initializers/omniauth.rb`:
 
 ```ruby
 Rails.application.config.middleware.use OmniAuth::Builder do
-  provider :odesk, ENV['ODESK_CONSUMER_KEY'], ENV['ODESK_CONSUMER_SECRET']
+  provider :upwork, ENV['UPWORK_CONSUMER_KEY'], ENV['UPWORK_CONSUMER_SECRET']
 end
 ```
 
@@ -36,12 +36,12 @@ Here's an example [Auth Hash](https://github.com/intridea/omniauth/wiki/Auth-Has
 
 ```ruby
 {
-  :provider => 'odesk',
+  :provider => 'upwork',
   :uid => '1234567',
   :info => {
     first_name: 'First Name',
     last_name: 'Last Name',
-    email: 'email@odesk.com',
+    email: 'email@upwork.com',
     status: 'active',
     profile_key: 'profile_key'
   },
@@ -55,9 +55,9 @@ Here's an example [Auth Hash](https://github.com/intridea/omniauth/wiki/Auth-Has
         status: "active",
         timezone: "UTC+02:00 Eastern Europe",
         timezone_offset: "10800"
-        public_url: 'https://www.odesk.com/users/~~kyad0112d885630b',
+        public_url: 'https://www.upwork.com/users/~~kyad0112d885630b',
         last_name: 'Novozhylov',
-        email: 'myemail@odesk.com',
+        email: 'myemail@upwork.com',
         reference: "12345",
         first_name: "Maksym",
         profile_key: "~~kyad0112d885630b",
