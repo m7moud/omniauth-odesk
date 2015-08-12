@@ -1,12 +1,9 @@
-omniauth-upwork
-===============
-
+# omniauth-upwork
 Upwork Developer API OAuth 1.0 Strategy for OmniAuth.
 
 Supports the OAuth 1.0 server-side and client-side flows. Read the [Upwork Developer API docs](https://developers.upwork.com/#authentication_oauth-10) for more details.
 
 ## Installing
-
 Add to your `Gemfile`:
 
 ```ruby
@@ -16,7 +13,6 @@ gem 'omniauth-upwork'
 Then `bundle install`.
 
 ## Usage
-
 `OmniAuth::Strategies::Upwork` is simply a Rack middleware.Read the [OmniAuth 1.0](https://github.com/intridea/omniauth) and [OAuth 2.0](https://github.com/intridea/oauth2) docs for detailed instructions
 
 Here's a quick example, adding the middleware to a Rails app in `config/initializers/omniauth.rb`:
@@ -27,11 +23,7 @@ Rails.application.config.middleware.use OmniAuth::Builder do
 end
 ```
 
-## Examples
-Standalone usage from a Ruby script samples can be found under `examples` folder.
-
 ## Auth Hash
-
 Here's an example [Auth Hash](https://github.com/intridea/omniauth/wiki/Auth-Hash-Schema) available in `request.env['omniauth.auth']`:
 
 ```ruby
@@ -67,7 +59,6 @@ Here's an example [Auth Hash](https://github.com/intridea/omniauth/wiki/Auth-Has
 ```
 
 ## License
-
 Copyright (c) 2013 by Jignesh Gohel
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
